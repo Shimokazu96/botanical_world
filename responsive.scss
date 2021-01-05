@@ -1,0 +1,228 @@
+@media (max-width: 768px){
+  .nav{
+    display: none;
+  }
+  .slider{
+    top: 0px;
+  }
+  .list-text h2{
+    font-size: 17px;
+  }
+  .world-content{
+    height:300px;
+  }
+  .world-text{
+    margin:30px;
+  }
+  .world-text h2{
+    font-size: 25px;
+
+  }
+  .news{
+    height: 1300px;
+  }
+  .news-flex {
+    display: block;
+    top:35%;
+  }
+
+  .news-news {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .news-img-text h2{
+    left: 40%;
+    font-size: 17px;
+  }
+
+  .footer-list{
+    width:90%;
+  }
+
+  .hamburger {
+    display : block;
+    position: fixed;
+    z-index : 3000;
+    right : 13px;
+    top   : 12px;
+    width : 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    left    : 6px;
+    background : #555;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    background :#fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    background :#fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  
+  .globalMenuSp {
+    position: fixed;
+    z-index : 2500;
+    top  : 0;
+    left : 0;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+    display: block;
+  }
+  
+  .globalMenuSp ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .4s all;
+  }
+  .globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+  .globalMenuSp ul li:hover{
+    background :#ddd;
+  }
+  
+  .globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1em 0;
+    text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  .globalMenuSp.active {
+    opacity: 100;
+  
+  }
+}
+
+@media (max-width: 400px) {
+  .slider{
+    height:300px;
+
+    & h1{
+      font-size: 25px;
+    }
+  }
+  .contact-body{
+    width: 100%;
+  }
+  .footer-list{
+    width: 100%;
+  }
+  .list{
+    display: block; 
+
+    &-item{
+      flex:0;
+    }
+
+    &-text{
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+  .world-img{
+    width:100%;
+    height:300px;
+  }
+  .world-contents {
+    background-color: white;
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    
+  }
+  
+  .news {
+    height: 1600px;
+  }
+  .news-news{
+    width: 90%;
+    padding-top: 0px;
+    margin: 0 auto;
+  }
+  .news-news:first-child{
+    margin: 0 auto;
+  }
+  .news-img{
+    display: flex;
+    height:auto;
+    flex-direction: column;
+  }
+  .news-img-text{
+    width:100%;
+
+    & h2{
+      left:20%;
+    }
+  }
+  .btn-default2{
+    width:50%;
+  }
+  .contact{
+    &-flex{
+      margin:0 auto;
+      width:80%;
+    }
+    &-btn{
+      width:150px;
+    }
+  }
+  .blog-list-item {
+    flex-basis: 46%;
+  }
+  footer{
+    height:600px;
+  }
+  .footer-list {
+    width:90%;
+    flex-wrap: wrap;
+  }
+  .footer-item {
+    flex-basis: 46%;
+  }
+}

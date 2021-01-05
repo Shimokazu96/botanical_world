@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <script src=https://code.jquery.com/jquery-3.4.1.min.js></script>
   <title>Document</title>
 </head>
 <body>
   <header class="header">
-    <div class="header-title">
+    <div class="title">
       <img src="images/common/flower.jpeg" class="logo">
       <h1 class="font-md">Succulent Plants</h1>
     </div>
   </header>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
@@ -21,21 +30,39 @@
       </li>
       <li class="nav-item">
         <a class="nav-link font-md" href="">About</a>
+        <ul class="nav-drop font-sm ">
+          <li><a href="">会社概要</a></li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link font-md" href="">Menu</a>
+        <ul class="nav-drop font-sm ">
+          <li><a href="">商品案内</a></li>
+          <li><a href="">ご契約について</a></li>
+          <li><a href="">在庫状況のご確認方法</a></li>
+          <li><a href="">選ばれる理由</a></li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link font-md" href="">Access</a>
       </li>
       <li class="nav-item">
         <a class="nav-link font-md" href="">Blog</a>
+        <ul class="nav-drop font-sm ">
+          <li><a href="">ブログ一覧</a></li>
+          <li><a href="">ニュース一覧</a></li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link font-md" href="">Contact</a>
+        <ul class="nav-drop font-sm ">
+          <li><a href="">一般のお問い合わせ</a></li>
+          <li><a href="">法人のお問い合わせ</a></li>
+        </ul>
       </li>
     </ul>
   </nav>
+
   <div class="slider">
     <div class="bgImg src1"></div>
     <div class="bgImg src2"></div>
@@ -45,31 +72,34 @@
       <h1>Botanical world</h1>
     </div>
   </div>
+  <main>
 
-  <div class="container">
-    <div class="list">
-      <div class="list-item">
-        <img src="images/common/geranium-4287012_1920.jpg" alt="">
-        <div class="list-text">
-          <h2>グリーンのある暮らし</h2>
-          <p class="font-sm">テストテストテストテスト　テストテストテストテストテストテストテスト</p>
+    <div class="container">
+      <div class="list">
+        <div class="list-item">
+          <img src="images/common/geranium-4287012_1920.jpg" alt="">
+          <div class="list-text">
+            <h2>グリーンのある暮らし</h2>
+            <p class="font-sm">テストテストテストテスト　テストテストテストテストテストテストテスト</p>
+          </div>
         </div>
-      </div>
-      <div class="list-item">
-        <img src="images/common/lotus-846059_1920.jpg" alt="">
-        <div class="list-text">
-          <h2>Message</h2>
-          <p class="font-sm">テストテストテストテスト　テストテストテストテストテストテストテスト　テストテストテストテストテストテストテストテストテストテストテスト　テストテストテストテストテストテストテストテストテストテストテスト　テストテストテストテストテストテストテスト</p>
+        <div class="list-item">
+          <img src="images/common/lotus-846059_1920.jpg" alt="">
+          <div class="list-text">
+            <h2>Message</h2>
+            <p class="font-sm">テストテストテストテスト　テストテストテストテストテストテストテスト　テストテストテストテストテストテストテストテストテストテストテスト　テストテストテストテストテストテストテストテストテストテストテスト　テストテストテストテストテストテストテスト</p>
+          </div>
         </div>
-      </div>
-      <div class="list-item">
-        <img src="images/common/summer-783347_1920.jpg" alt="">
-        <div class="list-text">
-          <h2>タイトル</h2>
-          <p class="font-sm">テストテストテストテスト　テストテストテストテストテストテストテスト　テストテストテストテストテストテストテストテストテストテストテスト　テストテストテストテストテストテストテスト</p>
+        <div class="list-item">
+          <img src="images/common/summer-783347_1920.jpg" alt="">
+          <div class="list-text">
+            <h2>タイトル</h2>
+            <p class="font-sm">テストテストテストテスト　テストテストテストテストテストテストテスト　テストテストテストテストテストテストテストテストテストテストテスト　テストテストテストテストテストテストテスト</p>
+          </div>
         </div>
       </div>
     </div>
+  </main>
 
     <div class="world">
       <div class="world-img">
@@ -82,32 +112,230 @@
       </div>
     </div>
   </div>
-  <div class="blog">
-      <div class="blog-flex">
-        <div class="blog-news">
-          <div class="blog-img">
+  <div class="news">
+    <div class="news-flex">
+      <div class="news-news">
+        <div class="news-img">
+          <a href="">
             <img src="images/common/manja-vitolic-7tOV35hnkao-unsplash.jpg" alt="">
-            <div class="blog-img-text">
-              <h2>Opening Campaign</h2>
-              <p class="font-sm">オープニングキャンペーンを
-                <br>行なっております。</p>
-            </div>
-          </div>
-          <div class="blog-img">
-            <img src="images/common/toa-heftiba-FV3GConVSss-unsplash.jpg" alt="">
-            <div class="blog-img-text">
-              <h2>Interior Campaign</h2>
-              <p class="font-sm">インテリアショップとのコラボレーション企画。あのインテリアショップやこのブランドまで勢ぞろい。
-              <br>是非店頭にお越しくださいませ。
-              </p>
-            </div>
+          </a>
+          <div class="news-img-text">
+            <h2 class="btn-default2">Opening Campaign</h2>
+            <a href="">
+              <p class="font-sm">オープニングキャンペーンを行なっております。</p>
+            </a>
           </div>
         </div>
-        <div class="blog-news">
-          <h2>News</h2>
+        <div class="news-img">
+          <a href="">
+            <img src="images/common/toa-heftiba-FV3GConVSss-unsplash.jpg" alt="">
+          </a>
+          <div class="news-img-text">
+            <h2 class="btn-default2">Interior Campaign</h2>
+            <a href="">
+              <p class="font-sm">インテリアショップとのコラボレーション企画。あのインテリアショップやこのブランドまで勢ぞろい。<br>是非店頭にお越しくださいませ。
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="news-news">
+        <div class="news-list">
+          <div class="news-list-header">
+            <h2>News</h2>
+            <a class="btn-default" href="">お知らせ一覧</a>
+          </div>
+          <ul class="newslist">
+            <li class="font-sm">
+              <div>
+                <time datetime="2021-1-1">2021.01.01</time>
+              </div>
+              <a href="#">
+              <p> テキストテキスト </p>
+              </a>
+            </li>
+            <li class="font-sm">
+              <div>
+                <time datetime="2021-1-1">2021.01.01</time>
+              </div>
+              <a href="#">
+              <p> テキストテキスト </p>
+              </a>
+            </li>
+            <li class="font-sm">
+              <div>
+                <time datetime="2021-1-1">2021.01.01</time>
+              </div>
+              <a href="#">
+              <p> テキストテキスト </p>
+              </a>
+            </li>
+            <li class="font-sm">
+              <div>
+                <time datetime="2021-1-1">2021.01.01</time>
+              </div>
+              <a href="#">
+              <p> テキストテキスト </p>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
+  <div class="blog">
+    <div class="blog-header">
+      <h2>Blog</h2>
+      <a class="btn-default" href="">ブログ一覧</a>
+    </div>
+    <div class="blog-list">
+      <div class="blog-list-item">
+        <a href="">
+          <img src="images/common/veri-ivanova-whOkVvf0_hU-unsplash.jpg" alt="">
+            <div class="caption">Read More</div>
+        </a>
+        <div class="blog-list-text">
+          <div>
+            <time datetime="2021-1-1">2021.01.01</time> | カテゴリー名
+          </div>
+          <a href="#">
+            <p> テキストテキスト </p>
+          </a>
+        </div>
+      </div>
+      <div class="blog-list-item">
+        <a href="">
+          <img src="images/common/veri-ivanova-whOkVvf0_hU-unsplash.jpg" alt="">
+            <div class="caption">Read More</div>
+        </a>
+        <div class="blog-list-text">
+          <div>
+            <time datetime="2021-1-1">2021.01.01</time> | カテゴリー名
+          </div>
+          <a href="#">
+            <p> テキストテキスト </p>
+          </a>
+        </div>
+      </div>
+      <div class="blog-list-item">
+        <a href="">
+          <img src="images/common/veri-ivanova-whOkVvf0_hU-unsplash.jpg" alt="">
+            <div class="caption">Read More</div>
+        </a>
+        <div class="blog-list-text">
+          <div>
+            <time datetime="2021-1-1">2021.01.01</time> | カテゴリー名
+          </div>
+          <a href="#">
+            <p> テキストテキスト </p>
+          </a>
+        </div>
+      </div>
+      <div class="blog-list-item">
+        <a href="">
+          <img src="images/common/veri-ivanova-whOkVvf0_hU-unsplash.jpg" alt="">
+            <div class="caption">Read More</div>
+        </a>
+        <div class="blog-list-text">
+          <div>
+            <time datetime="2021-1-1">2021.01.01</time> | カテゴリー名
+          </div>
+          <a href="#">
+            <p> テキストテキスト </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact">
+    <div class="mask">
+      <div class="contact-body">
+        <h2 class="font-lr">Contact us</h2>
+        <p>お気軽にお問い合わせ下さい。</p>
+
+        <div class="contact-flex">
+          <a href="">
+            <div class="contact-btn">
+              <div class="icon">
+                <i class="far fa-envelope fa-4x"></i>
+              </div>
+              <p>お問い合わせ</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="contact-btn">
+              <div class="icon">
+                <i class="fas fa-phone-alt fa-4x"></i>
+              </div>
+              <p>06-1234-5678</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="title">
+      <img src="images/common/flower.jpeg" class="logo">
+      <h1 class="font-md">Succulent Plants</h1>
+    </div>
+    <div class="footer-list">
+      <div class="footer-item">
+        <h3>Home</h3>
+        <h3>About</h3>
+        <a href="">- 会社概要</a>
+      </div>
+      <div class="footer-item">
+        <h3>Menu</h3>
+        <a href="">- 商品案内</a>
+        <a href="">- ご契約について</a>
+        <a href="">- 在庫状況のご確認方法</a>
+        <a href="">- 選ばれる理由</a>
+      </div>
+      <div class="footer-item">
+        <h3>Access</h3>
+        <h3>Blog</h3>
+        <a href="">- ブログ一覧</a>
+        <a href="">- ニュース一覧</a>
+      </div>
+      <div class="footer-item">
+        <h3>Contact</h3>
+        <a href="">- 一般のお問い合わせ</a>
+        <a href="">- 法人のお問い合わせ</a>
+      </div>
+    </div>
+    <!-- スクロールボタン -->
+    <div class="site-up" id="pagetop">
+      <a href="">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </a>
+      </div>
+  </footer>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-list">
+        <div>
+          ©️Example Co., Ltd.
+        </div>
+        <div><a href=""><i class="fab fa-twitter "></i></a>
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="globalMenuSp">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Access</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+</div>
+  <script src="js/script.js"></script>
 </body>
 </html>
