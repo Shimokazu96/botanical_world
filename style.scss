@@ -1,7 +1,7 @@
 body {
   margin: 0px;
-  font-family:   '小塚ゴシック Pro','Kozuka Gothic Pro',"ヒラギノ角ゴ Pro W3","メイリオ",sans-serif;
-  font-family: 'Bellefair', serif;
+  font-family:   'Bellefair','小塚ゴシック Pro','Kozuka Gothic Pro',"ヒラギノ角ゴ Pro W3","メイリオ",sans-serif;
+  
 }
 
 a {
@@ -15,7 +15,7 @@ ul {
   list-style: none;
 }
 
-h1,h2,p,dd{
+h1,h2,h3,p,dd{
   margin:0px;
   font-weight: normal;
 }
@@ -122,6 +122,9 @@ h2:before{
     padding: 0 50px;
     position: relative;
 
+    &:hover{
+      background: rgba(175, 175, 175, 0.7);
+    }
     &:hover .nav-drop {
     visibility: visible;
     display: block;
@@ -135,6 +138,7 @@ h2:before{
   &-drop{
     position: absolute;
     top: 80px;
+    left:0;
     opacity: 0;
     line-height: 60px;
     text-align: center;
@@ -283,7 +287,7 @@ h2:before{
   &-contents{
     background-color: white;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 60%;
     width: 40%;
     // height: 370px;
@@ -293,6 +297,7 @@ h2:before{
   &-text {
     margin: 50px;
     margin-bottom: 80px;
+    
     
     & h2{
       text-align: center;
@@ -631,6 +636,9 @@ footer{
   & h3{
     color:#27532D;
   }
+  & a:hover{
+    background-color: rgba(175, 175, 175, 0.7);
+  }
 }
 
 .footer-bottom{
@@ -668,7 +676,7 @@ footer{
   height: 45px;
   line-height: 45px;
   text-align: center;
-  z-index: 9999;
+  z-index: 2000;
 }
 
 .totop {

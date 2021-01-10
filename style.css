@@ -1,8 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0px;
-  font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',"ヒラギノ角ゴ Pro W3","メイリオ",sans-serif;
-  font-family: 'Bellefair', serif;
+  font-family: 'Bellefair','小塚ゴシック Pro','Kozuka Gothic Pro',"ヒラギノ角ゴ Pro W3","メイリオ",sans-serif;
 }
 
 a {
@@ -16,7 +15,7 @@ ul {
   list-style: none;
 }
 
-h1, h2, p, dd {
+h1, h2, h3, p, dd {
   margin: 0px;
   font-weight: normal;
 }
@@ -148,6 +147,10 @@ h2:before {
   position: relative;
 }
 
+.nav-item:hover {
+  background: rgba(175, 175, 175, 0.7);
+}
+
 .nav-item:hover .nav-drop {
   visibility: visible;
   display: block;
@@ -161,6 +164,7 @@ h2:before {
 .nav-drop {
   position: absolute;
   top: 80px;
+  left: 0;
   opacity: 0;
   line-height: 60px;
   text-align: center;
@@ -355,7 +359,7 @@ h2:before {
 .world-contents {
   background-color: white;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 60%;
   width: 40%;
 }
@@ -745,6 +749,10 @@ footer {
   color: #27532D;
 }
 
+.footer-list a:hover {
+  background-color: rgba(175, 175, 175, 0.7);
+}
+
 .footer-bottom {
   background-color: #7b8480;
   height: 40px;
@@ -784,7 +792,7 @@ footer {
   height: 45px;
   line-height: 45px;
   text-align: center;
-  z-index: 9999;
+  z-index: 2000;
 }
 
 .totop {
